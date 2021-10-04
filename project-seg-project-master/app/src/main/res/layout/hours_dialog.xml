@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/dialogTitle"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Branch Service Hours"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="30sp"
+        />
+    <TextView
+        android:id="@+id/time_info"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Use 24-hour basis, leave days empty if closed"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/dialogTitle"
+        android:textSize="12sp"
+        />
+    <TextView
+        android:id="@+id/monday"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Monday"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/time_info"
+        android:textSize="25sp"
+        />
+    <EditText
+        android:id="@+id/mStart"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:hint="Start Time"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/monday"
+        />
+    <EditText
+        android:id="@+id/mEnd"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:hint="End Time"
+        android:layout_marginLeft="200dp"
+        android:layout_below="@+id/monday"
+        />
+    <TextView
+        android:id="@+id/tuesday"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Tuesday"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/mStart"
+        android:textSize="25sp"
+        />
+    <EditText
+        android:id="@+id/tuStart"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:hint="Start Time"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/tuesday"
+        />
+    <EditText
+        android:id="@+id/tuEnd"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:hint="End Time"
+        android:layout_marginLeft="200dp"
+        android:layout_below="@+id/tuesday"
+        />
+    <TextView
+        android:id="@+id/wednesday"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Wednesday"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/tuStart"
+        android:textSize="25sp"
+        />
+
+    <EditText
+        android:id="@+id/wStart"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:hint="Start Time"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/wednesday"
+        />
+    <EditText
+        android:id="@+id/wEnd"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:hint="End Time"
+        android:layout_marginLeft="200dp"
+        android:layout_below="@+id/wednesday"
+        />
+
+    <TextView
+        android:id="@+id/thursday"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Thursday"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/wStart"
+        android:textSize="25sp"
+        />
+
+    <EditText
+        android:id="@+id/thStart"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:hint="Start Time"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/thursday"
+        />
+    <EditText
+        android:id="@+id/thEnd"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:hint="End Time"
+        android:layout_marginLeft="200dp"
+        android:layout_below="@+id/thursday"
+        />
+
+    <TextView
+        android:id="@+id/friday"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Friday"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/thStart"
+        android:textSize="25sp"
+        />
+
+    <EditText
+        android:id="@+id/fStart"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:hint="Start Time"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/friday"
+        />
+    <EditText
+        android:id="@+id/fEnd"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:hint="End Time"
+        android:layout_marginLeft="200dp"
+        android:layout_below="@+id/friday"
+        />
+
+    <TextView
+        android:id="@+id/saturday"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Saturday"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/fStart"
+        android:textSize="25sp"
+        />
+
+    <EditText
+        android:id="@+id/saStart"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:hint="Start Time"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/saturday"
+        />
+    <EditText
+        android:id="@+id/saEnd"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:hint="End Time"
+        android:layout_marginLeft="200dp"
+        android:layout_below="@+id/saturday"
+        />
+
+    <TextView
+        android:id="@+id/sunday"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Sunday"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/saStart"
+        android:textSize="25sp"
+        />
+
+    <EditText
+        android:id="@+id/suStart"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:hint="Start Time"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/sunday"
+        android:layout_marginBottom="20dp"
+        />
+    <EditText
+        android:id="@+id/suEnd"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:hint="End Time"
+        android:layout_marginLeft="200dp"
+        android:layout_below="@+id/sunday"
+        android:layout_marginBottom="20dp"
+        />
+</RelativeLayout>
+</ScrollView>

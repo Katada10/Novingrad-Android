@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Novingrad</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string-array name="roles">
+        <item>administrator</item>
+        <item>branch</item>
+        <item>customer</item>
+    </string-array>
+
+    <string-array name="searchParams">
+        <item>address</item>
+        <item>serviceType</item>
+        <item>workingHours</item>
+    </string-array>
+</resources>

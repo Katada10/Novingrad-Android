@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "795322807200",
+    "firebase_url": "https://novingrad-dbba4.firebaseio.com",
+    "project_id": "novingrad-dbba4",
+    "storage_bucket": "novingrad-dbba4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:795322807200:android:1ae4ee3b649b5f0ac46ac5",
+        "android_client_info": {
+          "package_name": "com.example.novingrad"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "795322807200-e4rmfjoshcdlm6dapoti1cqlru16n1v8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBD6dyHpOaEBqWUZN79n5qDozL7qiUdbVc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "795322807200-e4rmfjoshcdlm6dapoti1cqlru16n1v8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/branchTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text=""
+            android:textSize="30sp"
+            />
+
+        <Button
+            android:id="@+id/submitRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ratingBar"
+            android:layout_centerHorizontal="true"
+            android:stepSize="1"
+            android:text="SUBMIT RATING" />
+        <Button
+            android:id="@+id/ratingButton"
+            android:layout_below="@+id/branchTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rate this branch"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:onClick="toggleRating"
+            />
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_below="@+id/ratingButton"
+            android:stepSize = "1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            />
+        <Button
+            android:id="@+id/requestButton"
+            android:layout_below="@+id/submitRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Make service request"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:onClick="toggleRequest"
+            />
+        <TextView
+            android:id="@+id/docs"
+            android:layout_below="@id/requestButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            />
+        <EditText
+            android:id="@+id/docField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/docs"
+            android:hint="Text for supporting documents"
+            />
+        <Button
+            android:id="@+id/submitRequest"
+            android:layout_below="@id/docField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Submit request"
+            />
+
+    </RelativeLayout>
+</ScrollView>

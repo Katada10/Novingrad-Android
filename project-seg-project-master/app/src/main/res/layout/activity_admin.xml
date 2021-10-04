@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/newSer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminActivity">
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="180dp"
+        android:layout_height="63dp"
+        android:onClick="OnAddEdit"
+        android:text="ADD/EDIT SERVICE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/requiredDocuments" />
+
+    <Button
+        android:id="@+id/btnDel"
+        android:layout_width="177dp"
+        android:layout_height="57dp"
+        android:text="DELETE SERVICE"
+        android:onClick="OnDelete"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/accDelete"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tblSer" />
+
+    <TableLayout
+        android:id="@+id/tblSer"
+        android:layout_width="375dp"
+        android:layout_height="165dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnDel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:id="@+id/accDelete"
+        android:layout_width="177dp"
+        android:layout_height="57dp"
+        android:text="DELETE AN ACCOUNT"
+        android:onClick="accountsHandler"
+        app:layout_constraintBottom_toTopOf="@+id/accToDel"
+        app:layout_constraintTop_toBottomOf="@+id/btnDel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
+    
+    <EditText
+        android:id="@+id/accToDel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter a username"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/submitAccDel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/accDelete" />
+    
+     <Button
+        android:id="@+id/submitAccDel"
+        android:layout_width="177dp"
+        android:layout_height="57dp"
+        android:text="Submit"
+        android:onClick="submitDelRequest"
+        app:layout_constraintBottom_toTopOf="@+id/serviceType"
+        app:layout_constraintTop_toBottomOf="@+id/accToDel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
+    
+    <EditText
+        android:id="@+id/serviceType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Service Type"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/requiredDocuments"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/submitAccDel" />
+
+    <EditText
+        android:id="@+id/requiredDocuments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Required Documents"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/btnAdd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/serviceType" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SERVICES"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/tblSer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
